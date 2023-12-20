@@ -1,5 +1,5 @@
 dependencies {
-    implementation 'io.grpc:grpc-protobuf:1.50.2'
+    implementation 'io.grpc:grpc-protobuf:1.58.0'
 
     // Protobuf Lite is used to maintain easy compatibility with Android
     // https://github.com/protocolbuffers/protobuf/blob/master/java/lite.md

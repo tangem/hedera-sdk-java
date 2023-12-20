@@ -8,7 +8,7 @@ plugins {
 }
 
 apply from: "../version.gradle"
-apply from: "./sdk.gradle"
+apply from: "./sdk-full.gradle"
 
 configurations {
     integrationTestImplementation.extendsFrom testImplementation
