@@ -88,7 +88,7 @@ class PublicKeyED25519 extends PublicKey {
     }
 
     @Override
-    SignaturePair toSignaturePairProtobuf(byte[] signature) {
+    public SignaturePair toSignaturePairProtobuf(byte[] signature) {
         return SignaturePair.newBuilder()
             .setPubKeyPrefix(ByteString.copyFrom(keyData))
             .setEd25519(ByteString.copyFrom(signature))

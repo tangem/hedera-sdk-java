@@ -90,12 +90,12 @@ public abstract class Transaction<T extends Transaction<T>>
      * except pointing to different nodes. When retrying a transaction after a network error or retry-able status
      * response, we try a different transaction and thus a different node.
      */
-    protected List<com.hedera.hashgraph.sdk.proto.SignedTransaction.Builder> innerSignedTransactions = Collections.emptyList();
+    public List<com.hedera.hashgraph.sdk.proto.SignedTransaction.Builder> innerSignedTransactions = Collections.emptyList();
 
     /**
      * A set of signatures corresponding to every unique public key used to sign the transaction.
      */
-    protected List<SignatureMap.Builder> sigPairLists = Collections.emptyList();
+    public List<SignatureMap.Builder> sigPairLists = Collections.emptyList();
 
     /**
      * List of IDs for the transaction based on the operator because the transaction ID includes the operator's account

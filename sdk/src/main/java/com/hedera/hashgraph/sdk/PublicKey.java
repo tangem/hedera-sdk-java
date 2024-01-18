@@ -212,7 +212,7 @@ public abstract class PublicKey extends Key {
     /**
      * Serialize this key as a SignaturePair protobuf object
      */
-    abstract SignaturePair toSignaturePairProtobuf(byte[] signature);
+    public abstract SignaturePair toSignaturePairProtobuf(byte[] signature);
 
     @Override
     public abstract byte[] toBytes();
